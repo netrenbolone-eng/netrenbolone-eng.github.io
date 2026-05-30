@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bodysupport.ru
+Sitemap: https:/bodysupport.ru
 
