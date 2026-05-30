@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
-<html><head><!-- Google tag (gtag.js) -->
+<html><head><style>
+  /* Принудительно включаем прокрутку для обертки слайдов */
+  .t-slds__items-wrapper {
+    overflow-x: auto !important;
+    display: flex !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  /* Убираем стандартный некрасивый скроллбар снизу */
+  .t-slds__items-wrapper::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  
+  /* Заставляем каждый слайд четко фиксироваться при прокрутке */
+  .t-slds__item {
+    display: block !important;
+    flex-shrink: 0 !important;
+    scroll-snap-align: start !important;
+  }
+</style><!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B38K7NPWTJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
